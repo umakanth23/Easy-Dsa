@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve | Learn | Grow</title>
+</head>
+<body>
+    <h2>Check for prime</h2>
+    
+    
+    <input type="number" name="" id="num">
+        <p id="num-dis"></p>
+        <button onclick="checkeven()">even/odd</button>
+        <button onclick="checkprime()">prime / not prime</button>
+    <p>Umakanth Dudlawar : </p>
+    <h2 id ="ud"></h2>
+    
+    <button onclick="find()">check</button>
+<script>
+    
+    function checkeven()
+    {   
+        let inF = document.getElementById("num")
+        let ev = document.getElementById("num-dis")
+        let val = inF.value
+        if(val%2  == 0)
+        {
+            ev.innerHTML = "EVEN"
+        }
+        else
+        {
+            ev.innerHTML = "ODD"
+        }
+    }
+
+    function checkprime()
+    {   
+        
+        let dis = document.getElementById("num-dis");
+        let prime = 1;
+        let inF = document.getElementById("num")
+        let val = inF.value
+        if(val<2)
+        {
+            prime = 0;
+        }
+        else
+        {
+            for(let i=2;i<val;i++)
+            {
+                if(val % i == 0)
+                {
+                    prime = 0;
+                    break;
+                }
+            }
+        }
+        if(prime == 1)
+        {
+            dis.innerHTML = "True";
+        }
+        else
+        {
+            dis.innerHTML = "False";
+        }
+    }
+    function find()
+    {
+        let sp = document.getElementById("ud");
+        sp.innerHTML = 3456
+    }
+</script>
+</body>
+</html>

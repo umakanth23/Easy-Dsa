@@ -1,0 +1,41 @@
+.hd
+{
+    text-align: center;
+    font-size: 44px;
+}
+.main
+{
+    display: flex;
+    flex-direction: row;
+}
+.left 
+{
+    margin:10px 15px;
+    border: 1px solid red;
+    padding:20px 20px ; 
+}
+.right
+{
+    margin:10px 15px;
+    border: 1px solid red;
+    padding:20px 20px ; 
+}
+a
+{
+    text-decoration: none;
+}
+.lc
+{
+    font-size: 24px;
+    border: 2px solid black;
+    padding:10px 10px;
+    text-align: center;
+    
+}
+.rc
+{
+    border:1px solid black;
+    padding:10px 20px;
+    margin:10px 10px;
+}
+
